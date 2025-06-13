@@ -1,0 +1,122 @@
+/* ===== Base Styles (Desktop First) ===== */
+body {
+    background-color: black;
+}
+
+.Todo {
+    color: red;
+    text-align: center;
+    position: sticky;
+    width: 100%;
+    font-size: 2rem;
+}
+
+.Content {
+    background-color: #a5441741;
+    margin: auto;
+    border-radius: 8px;
+    width: 36rem;
+    padding: 1rem;
+}
+
+.Operations {
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+}
+
+.AddBtn {
+    background-color: black;
+    color: red;
+    border-radius: 8px;
+    padding: 3px 10px;
+    font-size: 1rem;
+}
+
+.BtnSpan {
+    padding-left: 5.5rem;
+}
+
+.Task_Description {
+    border-radius: 8px;
+    height: 2rem;
+    width: 20rem;
+    color: black;
+    font-weight: bold;
+}
+
+.DelBtn {
+    background-color: black;
+    color: red;
+    border-radius: 8px;
+    padding: 3px 10px;
+    font-size: 1rem;
+}
+
+.DelSpan {
+    padding-left: 3.5rem;
+}
+
+.ListClass {
+    padding-bottom: 10px;
+}
+
+/* ===== Media Queries ===== */
+
+/* 📱 Mobile Devices (<=600px) */
+@media screen and (max-width: 600px) {
+    .Content {
+        width: 90%;
+    }
+
+    .Task_Description {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .BtnSpan,
+    .DelSpan {
+        padding-left: 1rem;
+        display: block;
+        margin-top: 0.5rem;
+    }
+
+    .AddBtn,
+    .DelBtn {
+        font-size: 0.9rem;
+        padding: 4px 8px;
+    }
+
+    .Todo {
+        font-size: 1.5rem;
+    }
+}
+
+/* 📱➡️💻 Tablet Devices (601px–1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .Content {
+        width: 28rem;
+    }
+
+    .Task_Description {
+        width: 18rem;
+        font-size: 1.1rem;
+    }
+
+    .BtnSpan,
+    .DelSpan {
+        padding-left: 2rem;
+    }
+
+    .AddBtn,
+    .DelBtn {
+        font-size: 1rem;
+    }
+
+    .Todo {
+        font-size: 1.8rem;
+    }
+}
